@@ -4,9 +4,23 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@yield('title')</title>
-    <meta name="csrf-token" content="{{ csrf_token() }}" />
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('/public/favicon/apple-touch-icon.png?v=20220524') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('/public/favicon/favicon-32x32.png?v=20220524') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('/public/favicon/favicon-16x16.png?v=20220524') }}">
+    <link rel="manifest" href="{{ asset('/public/favicon/site.webmanifest?v=20220524') }}">
+    <link rel="mask-icon" href="{{ asset('/public/favicon/safari-pinned-tab.svg?v=20220524') }}" color="#7f39fb">
+    <link rel="shortcut icon" href="{{ asset('/public/favicon/favicon.ico?v=20220524') }}">
+    <meta name="msapplication-config" content="{{ asset('/public/favicon/browserconfig.xml?v=20220524') }}">
+    
+    <meta name="msapplication-TileColor" content="#7f39fb">
+    <meta name="theme-color" content="#ffffff">
+
+
     <link rel="icon" type="image/png" href="{{ asset('/public/images/frontend/favicon.png') }}">
+
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
 
     <meta name="Keywords"
         content="Gobierno Entre Ríos Desarrollo Económico Emprendedor Financiamiento Jóvenes Emprendedores MiPyMEs PyMEs" />
@@ -55,8 +69,6 @@
         @yield('breadcrumb')
 
         @yield('content')
-
-        @include('base.footer')
 
     </div>
 
