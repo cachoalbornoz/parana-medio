@@ -1,0 +1,232 @@
+@font-face {
+  font-family: "DINPro-Regular";
+  src: local("DINPro-Regular"),
+    url("../font/dinpro/DINPro-Regular_13937.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: local("Avenir"), url("../font/Avenir_95_Black.ttf");
+}
+
+body {
+  font-family: "DINPro-Regular" !important;
+  padding-top: 70px;
+}
+
+.favenir {
+  font-family: "Avenir Next" !important;
+  font-style: normal;
+}
+
+.dinopro {
+  font-family: "DINPro-Regular" !important;
+  font-style: normal;
+}
+
+.help-block {
+  color: rgb(179, 98, 98);
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 2%;
+  width: 100%;
+}
+
+.dropdown-menu {
+  color: #777 !important;
+  background-color: #343a40;
+}
+
+.dropdown-item {
+  color: #777 !important;
+  background-color: #343a40;
+}
+.dropdown-menu :hover {
+  background-color: #343a40;
+  color: whitesmoke !important;
+}
+
+.nav-opacity {
+  opacity: 0.85 !important;
+}
+
+.img-medium {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.empty {
+  background: #f9f0e5;
+}
+
+.error {
+  color: red;
+}
+
+/* Quitar flechitas a los campos numericos */
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.image-block {
+  margin-top: 24px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-block-inner {
+  -webkit-box-shadow: 0px 3px 10px 1px rgba(204, 204, 204 0, 1);
+  -moz-box-shadow: 0px 3px 10px 1px rgba(204, 204, 204 0, 1);
+  box-shadow: 0px 3px 10px 1px rgba(204, 204, 204, 1);
+}
+
+.image-block li > .image-block-inner {
+  padding-bottom: 30px;
+  background-color: #fff;
+  height: 100%;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+h2,
+h4 a {
+  text-transform: uppercase;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.image-block li > .image-block-inner > a {
+  display: block;
+  overflow: hidden;
+}
+
+.image-block li > .image-block-inner > a img {
+  border: 1px solid #e1e1df;
+}
+
+.image-block li > .image-block-inner:hover {
+  background-color: #eee;
+}
+
+.hp-posts-cat {
+  margin-bottom: 13px;
+  margin-top: 35px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+}
+
+.news {
+  font-family: "Oswald", sans-serif;
+}
+
+.news .image-block li > .image-block-inner h4,
+.hp-posts-cat,
+.news .image-block li > .image-block-inner p,
+.read-more {
+  padding: 0 28px;
+}
+
+.read-more {
+  display: block;
+  text-decoration: underline;
+  margin-top: 30px;
+  font-weight: 600;
+}
+
+/* Media Queries */
+
+@media (min-width: 992px) {
+  .col-md-5 {
+    width: 41.66667%;
+  }
+}
+
+@media (min-width: 768px) {
+  .image-block li.image-block1 {
+    padding-left: 26px;
+    padding-right: 14.5px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .image-block li > .image-block-inner > a {
+    max-height: 245px;
+  }
+}
+
+@media (min-width: 992px) {
+  .pl-lg-0,
+  .px-lg-0 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .ml-lg-0,
+  .mx-lg-0 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Estilos Carrousel */
+
+.carousel .carousel-item {
+  max-height: 550px;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  max-height: 550px;
+}
+
+.carousel-caption {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  background: #333333;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.carousel-caption h4,
+.carousel-caption p {
+  line-height: 20px;
+  color: #ffffff;
+}
+
+.carousel-caption h4 {
+  margin: 0 0 5px;
+}
+
+.carousel-caption p {
+  margin-bottom: 0;
+}
